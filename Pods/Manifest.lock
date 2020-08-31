@@ -1,0 +1,16 @@
+PODS:
+  - VersaPlayer (3.0.2)
+
+DEPENDENCIES:
+  - VersaPlayer
+
+SPEC REPOS:
+  trunk:
+    - VersaPlayer
+
+SPEC CHECKSUMS:
+  VersaPlayer: 0e9a0ea7da786729ffb377dbd17b34641a8265e4
+
+PODFILE CHECKSUM: 7a8fa722cb6d12d91bcf20c40af1461dea6f26c3
+
+COCOAPODS: 1.9.1

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="filter" id="gTV-IL-0wX" customClass="FilterViewCell" customModule="YoutubeClone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="221" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="221" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y9U-xr-faK">
+                        <rect key="frame" x="33" y="0.0" width="168" height="50"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCb-yd-VMe">
+                                <rect key="frame" x="30" y="4" width="113" height="38"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="118" id="fpd-U0-vja"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tCb-yd-VMe" secondAttribute="trailing" constant="57" id="H9y-aQ-eMS"/>
+                            <constraint firstAttribute="bottom" secondItem="tCb-yd-VMe" secondAttribute="bottom" constant="48" id="LNS-6g-YWF"/>
+                            <constraint firstItem="tCb-yd-VMe" firstAttribute="top" secondItem="Y9U-xr-faK" secondAttribute="top" constant="49" id="Xc3-Gb-VjF"/>
+                            <constraint firstItem="tCb-yd-VMe" firstAttribute="leading" secondItem="Y9U-xr-faK" secondAttribute="leading" constant="57" id="uHU-a7-qev"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Y9U-xr-faK" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Sqn-17-BOp"/>
+                <constraint firstItem="Y9U-xr-faK" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="tVr-ez-tX2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="221" height="50"/>
+            <connections>
+                <outlet property="filterButton" destination="tCb-yd-VMe" id="XGk-q8-8J1"/>
+            </connections>
+            <point key="canvasLocation" x="192.0289855072464" y="121.875"/>
+        </collectionViewCell>
+    </objects>
+</document>
